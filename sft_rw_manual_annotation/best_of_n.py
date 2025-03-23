@@ -4,7 +4,7 @@ import json
 import os
 from transformers import AutoModelForSequenceClassification, AutoTokenizer
 import torch
-from sft_rw_manual_annotation.llm_query import orm_query, prm_query, orm_parallel_query, prm_parallel_query
+from llm_query import orm_query, prm_query, orm_parallel_query, prm_parallel_query
 from construct_dataset.construct_prompt import construct_ORM_prompt, construct_PRM_HRM_prompt_v2, \
     construct_policy_model_prompt_for_ORM, construct_policy_model_prompt_for_PRM_HRM
 import torch.nn.functional as F
